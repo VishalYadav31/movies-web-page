@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multimediatags</title>
+    </head>
+    <body>
+        <!-- multimedia tags:images audio video iframes etc. -->
+        <!-- images  -->
+        <!-- key:'value'  property:value-->
+        <!-- self-closing tag or empty tags or void element :its doesnt have any content inside it -->
+            <!-- different img formats:png jpg gif  -->
+        <img src="./image/sampl.jpg" alt="no-img" width="100px" height="200px">
+        <img src="./image/sample.jpg" alt="" style="width: 100px; height: 100px;">
+
+        <!-- audio tags -->
+        <!-- different audio format mp3 avif  aac  wav ogg -->
+        <!-- most of the browser supports autoplay with muted attribute -->
+        <audio controls loop muted autoplay >
+            <source src="./asserts/song1.mp3" type="audio/mp3">
+            <!-- if the format of the first is not in the browser it dispaly second song -->
+            <source src="./asserts/song2.avif" type="audio/avif">
+            no-audio is supported
+        </audio>
+
+        <!-- simple syntax:not standard -->
+        <audio src="./asserts/song1.mp3" controls muted autoplay loop></audio>
+
+        <!--video  -->
+        <!-- video formats :mp4 mkv ogg avif -->
+         <video controls  muted loop poster="./image/sample.jpg" width="200px" height="200px">
+            <source src="./asserts/video1.mp4" type="video/mp4">
+            <source src="./asserts/video1.mp4" type="video/mp4">
+            no video is supported
+         </video>
+
+         <!-- iframe:webpage inside webpage -->
+         <!-- <iframe src="" frameborder="0" width='' height=''></iframe> -->
+         <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d988929.6398867227!2d80.2874174!3d14.4843216!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1697519484419!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       <iframe src="https://socialprachar.com/" frameborder="0" width="500px" height="400px"></iframe>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/y_AeTUXdVs4?si=EkF_SVXUcSIVQklp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+    </body>
+</html>
